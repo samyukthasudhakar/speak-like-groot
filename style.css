@@ -1,57 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 body{
+    font-family: Montserrat;
     text-align:center;
+    font-weight: bold;
     margin:0;
-    padding:0;
+    padding:0;  
+    background-color:#7b3f00 ;
+    color:white;
+    
 }
-
-nav{
-    background-color:greenyellow;
-    padding:1.5rem;
-    display:block;
-    box-sizing: border-box;
+h2{
+    margin-bottom:0;
 }
-
-.container{
-    margin:auto;
-    width:600px;
-    padding:3rem;
-    display:block;
-}
-
 textarea{
-    width:600px;
-    height:100px;
-    margin-bottom: 2rem;
-    padding-top:3rem;
+    width:500px;
+    height:10vh;
+    margin: 2rem;
+    padding:2rem;
     text-align:center;
     font-size: 1rem;
     border-radius:1rem;
+    outline:none;
+    background: white;
+    
 }
 
-/* textarea{
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    min-height: 20vh;
-    margin-top: 2rem;
-    font-size: large;
-} */
+textarea, button{
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.5)
+    );
+    color:black;
+}
+
+::placeholder {
+    color:#7b3f00;
+}
+
+.parent{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.container{
+    flex-direction: column;
+    align-items: center;
+    margin : auto;
+    margin-top:0;
+    padding: 1rem; 
+    width : 50vw;
+    display : flex;
+    border-radius: 0.5rem;
+}
 
 .translatebtn{
     width:10rem;
     padding:0.5rem;
-    margin-bottom: 1rem;
-    border-radius:1rem;
+    border-radius:0.5rem;
+    border:none;
+    outline:none;
 }
 
-.outputtext{
-    padding-top:3rem;
-    border: 1px solid;
-    width:600px;
-    height:20vh;
-    background-color:white;
-    margin-top:1rem;
-    text-align:center;
-    border-radius: 1rem;
-    width:600px;
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width : 100%;
+    bottom:0;
+}
+
+.footer_icon{
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0.5rem;
 }
