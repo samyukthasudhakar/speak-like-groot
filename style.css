@@ -79,3 +79,9 @@ textarea, button{
     height: 1.7rem;
     padding: 0.5rem;
 }
+
+@media(max-width:940px){
+    textarea{
+        width:250px;
+    }
+}
